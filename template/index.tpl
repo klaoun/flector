@@ -1,7 +1,7 @@
-{combine_script id='core.switchbox' load='async' require='jquery' path='themes/default/js/switchbox.js'}
-{combine_script id='jquery.selectize' load='footer' path='themes/default/js/plugins/selectize.min.js'}
+{combine_script id='core.switchbox' load='async' require='jquery' path='themes/flector/js/switchbox.js'}
+{combine_script id='jquery.selectize' load='footer' path='themes/flector/js/plugins/selectize.min.js'}
 {combine_css path="admin/themes/default/fontello/css/animation.css" order=10} {* order 10 is required, see issue 1080 *}
-{combine_script id='jquery.tipTip' load='header' path='themes/default/js/plugins/jquery.tipTip.minified.js'}
+{combine_script id='jquery.tipTip' load='header' path='themes/flector/js/plugins/jquery.tipTip.minified.js'}
 
 {$MENUBAR}
 
@@ -182,7 +182,7 @@
 {/if}
 
 {if !empty($SEARCH_ID)}
-  {include file='themes/default/template/include/search_filters.inc.tpl'}
+  {include file='themes/flector/template/include/search_filters.inc.tpl'}
 {/if}
 
 {if !empty($THUMBNAILS)}

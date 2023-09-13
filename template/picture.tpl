@@ -1,4 +1,4 @@
-{combine_script id='core.switchbox' load='async' require='jquery' path='themes/default/js/switchbox.js'}
+{combine_script id='core.switchbox' load='async' require='jquery' path='themes/flector/js/switchbox.js'}
 {if isset($MENUBAR)}{$MENUBAR}{/if}
 <div id="content"{if isset($MENUBAR)} class="contentWithMenu"{/if}>
 
@@ -48,7 +48,7 @@ function changeImgSrc(url,typeSave,typeMap)
   </a><br>
   {/foreach}
   {if isset($U_ORIGINAL)}
-    {combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+    {combine_script id='core.scripts' load='async' path='themes/flector/js/scripts.js'}
   <a href="javascript:phpWGOpenWindow('{$U_ORIGINAL}','xxx','scrollbars=yes,toolbar=no,status=no,resizable=yes')" rel="nofollow">{'Original'|@translate}</a>
   {/if}
 </div>
@@ -262,8 +262,8 @@ y.callService(
 				<input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}">
 			{/if}
 			{/foreach}
-			{strip}{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
-			{combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
+			{strip}{combine_script id='core.scripts' load='async' path='themes/flector/js/scripts.js'}
+			{combine_script id='rating' load='async' require='core.scripts' path='themes/flector/js/rating.js'}
 			{footer_script}
 				var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
 				_pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
@@ -296,7 +296,7 @@ y.callService(
 			<div>
 				<a id="privacyLevelLink" href>{$available_permission_levels[$current.level]}</a>
 			</div>
-{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+{combine_script id='core.scripts' load='async' path='themes/flector/js/scripts.js'}
 {footer_script require='jquery'}{strip}
 function setPrivacyLevel(id, level){
 (new PwgWS('{$ROOT_URL}')).callService(

@@ -23,7 +23,7 @@ str_empty_search_bot_alt = "{'Pre-established filters are proposed, but you can 
 
 {/footer_script}
 
-{combine_script id='mcs' load='async' require='jquery' path='themes/default/js/mcs.js'}
+{combine_script id='mcs' load='async' require='jquery' path='themes/flector/js/mcs.js'}
 <div class="mcs-container">
   <div class="filter-manager-popin">
     <div class="filter-manager-popin-container">
